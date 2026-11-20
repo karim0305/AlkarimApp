@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Al Karim Styloes",
+    "slug": "al-karim-styloes",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "alkarimstyloes",
+    "userInterfaceStyle": "light",
+    "platforms": ["ios", "android"],
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.alkarim.styloes", "infoPlist": { "ITSAppUsesNonExemptEncryption": false } },
+    "android": { "package": "com.alkarim.styloes", "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#FFFFFF" } },
+    "plugins": [
+      "expo-router",
+      ["expo-splash-screen", { "backgroundColor": "#FFFFFF", "image": "./assets/splash-icon.png", "imageWidth": 220 }],
+      ["expo-image-picker", { "photosPermission": "Allow $(PRODUCT_NAME) to open your photos so you can add product and banner pictures." }]
+    ],
+    "experiments": { "typedRoutes": false }
+  }
+}
