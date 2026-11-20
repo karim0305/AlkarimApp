@@ -1,20 +1,63 @@
 {
   "expo": {
     "name": "Al Karim Styloes",
-    "slug": "al-karim-styloes",
+    "slug": "aks",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "alkarimstyloes",
     "userInterfaceStyle": "light",
-    "platforms": ["ios", "android"],
-    "ios": { "supportsTablet": true, "bundleIdentifier": "com.alkarim.styloes", "infoPlist": { "ITSAppUsesNonExemptEncryption": false } },
-    "android": { "package": "com.alkarim.styloes", "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#FFFFFF" } },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alkarim.styloes",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.alkarim.styloes",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
     "plugins": [
       "expo-router",
-      ["expo-splash-screen", { "backgroundColor": "#FFFFFF", "image": "./assets/splash-icon.png", "imageWidth": 220 }],
-      ["expo-image-picker", { "photosPermission": "Allow $(PRODUCT_NAME) to open your photos so you can add product and banner pictures." }]
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to open your photos so you can add product and banner pictures."
+        }
+      ]
     ],
-    "experiments": { "typedRoutes": false }
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "cc976728-c6e7-437d-9dc6-725d636739bc"
+      }
+    },
+    "owner": "mominkarim"
   }
 }
